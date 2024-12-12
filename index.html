@@ -39,6 +39,35 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .photo-container {
+            flex: 0 0 auto;
+        }
+        .photo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .about-text {
+            flex: 1 1 auto;
+        }
+        .teaser {
+            font-style: italic;
+            color: #555;
+        }
+        .project-image {
+            max-width: 100%;
+            width: 400px; /* Set desired width */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -61,13 +90,17 @@
     </nav> -->
 
     <section id="about">
-        <h2>About Me</h2>
-        <div class="photo-container">
-            <img src="https://github.com/MakingBigNewsWallace/MakingBigNewsWallace.github.io/blob/main/my_photo.jpg?raw=true" alt="My Photo">
+         <h2>About Me</h2>
+        <div class="about-container">
+            <div class="photo-container">
+                <img src="https://github.com/MakingBigNewsWallace/MakingBigNewsWallace.github.io/blob/main/my_photo.jpg?raw=true" alt="Your Photo">
+            </div>
+            <div class="about-text">
+                <p>Hi I'm Wenbo Gou, actively looking for PhD position! Currently, I'm a research assistant at CMU working in the <a href="http://humansensing.cs.cmu.edu/home/" target="_blank">Human Sensing Lab</a> with <a href="https://www.cs.cmu.edu/~ftorre/" target="_blank">Prof. Fernando De la Torre</a>. I obtained my MS ECE degree at CMU in May 2024, and I joined Human Sensing Lab since July 2023.</p>
+                <p>Before I came to CMU, I worked with <a href="http://www.zhangruimao.site/" target="_blank">Prof. Ruimao Zhang</a> at CUHK(Shenzhen) after I earned a bachelor's degree in Electronic Information Engineering at Huazhong University of Science and Technology. </p>
+            </div>
         </div>
-        <p>Hi I'm Wenbo Gou, actively looking for PhD position! Currently, I'm a research assistant at CMU working in the <a href="http://humansensing.cs.cmu.edu/home/" target="_blank">Human Sensing Lab</a> with <a href="https://www.cs.cmu.edu/~ftorre/" target="_blank">Prof. Fernando De la Torre</a>. I obtained my MS ECE degree at CMU in May 2024, and I joined Human Sensing Lab since July 2023.</p>
-        <p>Before I came to CMU, I worked with <a href="http://www.zhangruimao.site/" target="_blank">Prof. Ruimao Zhang</a> at CUHK(Shenzhen) after I earned a bachelor's degree in Electronic Information Engineering at Huazhong University of Science and Technology. </p>
-        </section>
+    </section>
     
     <section id="resume">
         <h2>Resume</h2>
@@ -82,7 +115,11 @@
     
     <section id="projects">
         <h2>Projects</h2>
-        <p>List some of your key projects here, with links if possible.</p>
+        <div>
+            <h3>Hamba: Single-view 3D Hand Reconstruction with Graph-guided Bi-Scanning Mamba(NeurIPS 24)</h3>
+            <p>Combining Mamba state space model and graph neural network to reconstruct 3D hand mesh. Explore more details on the <a href="https://github.com/humansensinglab/Hamba/tree/main" target="_blank">Hamba GitHub Repository</a>.</p>
+        <img src="https://github.com/MakingBigNewsWallace/MakingBigNewsWallace.github.io/blob/main/hamba_Teaser.jpg?raw=true" alt="Hamba Project Teaser" class="project-image">
+        </div>
     </section>
 
 
